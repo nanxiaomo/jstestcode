@@ -1,0 +1,29 @@
+<!-- 
+题目描述
+删除数组 arr 第一个元素。不要直接修改数组 arr，结果返回新的数组 
+输入例子:
+curtail([1, 2, 3, 4])
+
+输出例子:
+[2, 3, 4]
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>curtail</title>
+	<script type="text/javascript">
+		function curtail(arr) {
+			var newarr = new Array();
+			for (var i = 1; i < arr.length; i++) {
+				newarr.push(arr[i])
+			}
+			return newarr;
+		}
+		console.log(curtail([1, 2, 3, 4]));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
