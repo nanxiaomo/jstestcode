@@ -1,0 +1,31 @@
+<!-- 
+题目描述
+统计数组 arr 中值等于 item 的元素出现的次数 
+输入例子:
+count([1, 2, 4, 4, 3, 4, 3], 4)
+
+输出例子:
+3
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js 能力测试cunt</title>
+	<script type="text/javascript">
+		function count(arr, item) {
+			var count = 0;
+			for (var i = 0; i < arr.length; i++) {
+					if(arr[i] ==item){
+						count++;
+					}	
+			}
+			return count;
+		}
+		console.log(count([1, 2, 4, 4, 3, 4, 3], 4));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
