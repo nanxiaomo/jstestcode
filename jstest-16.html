@@ -1,0 +1,51 @@
+<!-- 
+题目描述
+请修复给定的 js 代码中，函数定义存在的问题 
+输入例子:
+functions(true)
+
+输出例子:
+a
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>请修复给定的 js 代码中，函数定义存在的问题 </title>
+ 	<script type="text/javascript">
+ 		/*
+ 		function functions(flag) {
+	    	if (flag) {
+	      		function getValue() { return 'a'; }
+	    		} else {
+	      		function getValue() { return 'b'; }
+	    	}
+			return getValue();
+
+		}
+		function functions(flag) {
+	    	if (flag) {
+	      		 return 'a'; 
+	    		} 
+	    	else {
+	      		 return 'b'; 
+	    	}
+		}
+		*/
+		function functions(flag) {
+   			var getvalue=null;
+    		if (flag) {
+      			getValue = function(){ return 'a'; }
+    		} else {
+      			getValue = function() { return 'b'; }
+    		}
+
+    		return getValue();
+		}
+		alert(functions(false));
+ 	</script>
+ </head>
+ <body>
+ 	
+ </body>
+ </html>
