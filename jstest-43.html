@@ -1,0 +1,31 @@
+<!-- 
+给定字符串 str，检查其是否包含 连续3个数字 
+1、如果包含，返回最新出现的 3 个数字的字符串
+2、如果不包含，返回 false 
+输入例子:
+captureThreeNumbers('9876543')
+
+输出例子:
+987
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8" />
+     <title>    </title>
+     <script type="text/javascript">
+         function captureThreeNumbers(str) {
+            var pattern = /[\d]{3}/;
+            var match = pattern.exec(str);
+            if (match != null) {
+                return match[0];
+            }
+            return false;
+        }
+        console.log(captureThreeNumbers('9876543'));
+     </script>
+ </head>
+ <body>
+     
+ </body>
+ </html>
