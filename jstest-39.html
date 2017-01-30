@@ -1,0 +1,28 @@
+<!-- 
+题目描述
+给定字符串 str，检查其是否包含数字，包含返回 true，否则返回 false 
+输入例子:
+containsNumber('abc123')
+ss
+输出例子:
+true
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>containsNumber</title>
+ 	<script type="text/javascript">
+ 		function containsNumber(str) {
+ 			var pattern = /\d+/;
+ 			if(pattern.exec(str))
+ 				return true;
+ 			return false;
+	}
+	console.log(containsNumber('abc'));
+ 	</script>
+ </head>
+ <body>
+ 	
+ </body>
+ </html>

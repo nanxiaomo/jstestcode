@@ -1,0 +1,29 @@
+<!-- 
+题目描述
+给定字符串 str，检查其是否以元音字母结尾
+1、元音字母包括 a，e，i，o，u，以及对应的大写
+2、包含返回 true，否则返回 false 
+输入例子:
+endsWithVowel('gorilla')
+
+输出例子:
+true
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>endsWithVowel</title>
+ 	<script type="text/javascript">
+ 		function endsWithVowel(str) {
+      		var pattern = /([aeiou]|[AEIOU])$/
+      		//简单一点的： var pattern =/[aeiou]$/i
+      		return pattern.test(str);
+		}
+		console.log(endsWithVowel('gorillaff'));
+ 	</script>
+ </head>
+ <body>
+ 	
+ </body>
+ </html>
